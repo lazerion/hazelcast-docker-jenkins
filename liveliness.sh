@@ -6,7 +6,7 @@ if [ -z "$1" ]
     host=localhost
 fi
 
-URL="http://$host:5701/hazelcast/healthcheck"
+URL="http://$host:5701/hazelcast/health"
 echo $URL
 
 HTTP_RESPONSE=$(curl --silent --write-out "HTTPSTATUS:%{http_code}" $URL)
