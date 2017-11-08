@@ -7,6 +7,7 @@
     <groupId>com.hazelcast</groupId>
     <artifactId>hazelcast-docker-jenkins</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <hazelcast.version>3.8.6</hazelcast.version>
 
     <dependencies>
         <dependency>
@@ -18,7 +19,7 @@
         <dependency>
             <groupId>com.hazelcast</groupId>
             <artifactId>hazelcast-client</artifactId>
-            <version>3.8.6</version>
+            <version>${hazelcast.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
